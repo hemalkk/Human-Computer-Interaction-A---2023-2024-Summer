@@ -1,0 +1,28 @@
+# Tangible User Interface Project - Controls Explanation
+
+## Button Controls:
+This project uses three physical buttons connected to the Arduino for controlling YouTube video playback:
+
+- **Button 1**: Play/Pause the video
+- **Button 2**: Mute/Unmute the video
+- **Button 3**: Toggle Full Screen on/off
+
+### Button Wiring:
+- **Button 1 (Play/Pause)** is connected to Arduino's digital pin **2**.
+- **Button 2 (Mute/Unmute)** is connected to Arduino's digital pin **3**.
+- **Button 3 (Full Screen)** is connected to Arduino's digital pin **4**.
+- The **C (Common)** terminal of each button is connected to these pins, while the **NC (Normally Closed)** terminal is connected to Arduino's **GND** through a **breadboard**.
+
+## Hand Gesture Controls:
+The project also incorporates hand gesture control via a webcam for additional media playback functions:
+
+- **Forward 5 seconds**: Swipe your hand to the right.
+- **Backward 5 seconds**: Swipe your hand to the left.
+- **Next Video**: A long swipe to the right.
+- **Previous Video**: A long swipe to the left.
+
+## Recognized Gestures:
+--Short Swipe (forward/backward): If the pinky is to the left of the thumb, it simulates a "right arrow" key press to skip forward 5 seconds, and if it's to the right, it simulates a "left arrow" key press to go back 5 seconds.
+--Long Swipe (next/previous video): If the index finger is far from the wrist and the pinky is to the left of the thumb, it simulates the "next video" (shift + N) or "previous video" (shift + P) action.
+
+These gestures are detected using the webcam and controlled via the Python script.
