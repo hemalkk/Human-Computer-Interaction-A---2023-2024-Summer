@@ -1,0 +1,36 @@
+# Tangible User Interface Project - Requirements and Setup
+
+## Hardware Requirements:
+- **Arduino Uno R3**: Microcontroller board used to handle the physical buttons.
+- **Jumper Wires (Male-to-Male)**: Used to connect the buttons to the Arduino.
+- **3 Push Buttons**: These are used for controlling the play/pause, mute/unmute, and fullscreen functionalities. Although on/off buttons were used initially, push buttons are more suitable for this type of control.
+- **Webcam**: A webcam is used for capturing hand gestures for gesture-based control.
+
+## Software Requirements:
+- **Python 3.x**: The main programming language for the gesture recognition and YouTube control.
+- **Arduino IDE**: To upload the button control code to the Arduino Uno R3.
+- **Python Libraries**:
+  - `opencv-python`: For handling webcam input and video processing.
+  - `mediapipe`: For hand gesture recognition.
+  - `pyserial`: For serial communication between Python and Arduino.
+  - `pyautogui`: To simulate keyboard inputs for controlling YouTube.
+
+## Installation Steps:
+
+### Step 1: Set up Arduino Uno
+1. Connect the **push buttons** to the Arduino Uno R3 using **jumper wires**.
+2. Use the **Arduino IDE** to upload the button control code to the Arduino.
+3. Make sure the Arduino is connected to your computer via USB.
+
+### Step 2: Install Python and Required Libraries
+1. Install **Python 3.x** on your computer.
+2. Install the necessary Python libraries using `pip`:
+    ```bash
+    pip install opencv-python mediapipe pyserial pyautogui
+    ```
+
+### Step 3: Run the Project
+1. Connect your **webcam** and ensure it is functional.
+2. Run the **Python code** that controls the hand gesture recognition.
+3. Open YouTube in your browser and use either **hand gestures** or **physical buttons** to control the video.
+
